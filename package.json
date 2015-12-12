@@ -1,0 +1,42 @@
+{
+  "name": "interval-expression",
+  "description": "A simple Node module to get date intervals from expressions of Timer",
+  "version": "0.1.2",
+  "author": {
+    "name": "Yeison Gomez",
+    "email": "yeison@noders.co"
+  },
+  "maintainers": [
+    {
+      "name": "YeisonGomez",
+      "email": "yeison@noders.co"
+    },
+    {
+      "name": "Cristiam Diaz",
+      "email": "cdiaz@noders.co"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlorenciaJS/interval-expression.git"
+  },
+  "keywords": [
+    "Date intervals",
+    "moment intervals",
+    "Date ranges",
+    "expressions of timer"
+  ],
+  "dependencies": {
+    "moment": "^2.10.6"
+  },
+  "main": "./lib/interval-expression",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.6.12"
+  },
+  "readme": "## Installation\n\n```sh\nnpm install interval-expression --save\n```\n\n## Usage\n\n\tvar intervals = require(\"interval-expression\")();\n\n\tvar thisweek = intervals.thisweek();\n\n\tconsole.log(thisweek.startDate + \" - \" + thisweek.endDate);\n\nAll methods return output object[starDate, endDate] \n\n\t=>(Fri Dec 7 2015 23:17:23 GMT-0500 (COT) - Fri Dec 13 2015 23:17:23 GMT-0500 (COT))\n\n## Methods\n\t\n\tintervals.today();\n\tintervals.yesterday();\n\tintervals.thisweek();\n\tintervals.lastweek();\n\tintervals.thismonth();\n\tintervals.lastmonth();\n\tintervals.thisyear();\n\n\n\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/FlorenciaJS/interval-expression/issues"
+  }
+}
